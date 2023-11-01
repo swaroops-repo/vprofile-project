@@ -3,7 +3,7 @@ RUN apt update && apt install maven -y
 RUN git clone https://github.com/swaroops-repo/vprofile-project.git
 
 # Clean the project and install dependencies
-RUN mvn clean install
+# RUN mvn clean install
 
 RUN cd vprofile-project && git checkout docker && mvn install
 
